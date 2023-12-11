@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+     <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/hall.css">
+
+    <!-- firebase -->
+    <!-- <script type="module" src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js"></script>
+    <script type="module" src=""></script> -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <!-- <script src="../JS/hall.js"></script> -->
+</head>
+<body class="body" id="DarkMode">
+   <nav class="navbar navbar-expand-lg fixed-top" id="Home">
+     <div class="container-fluid">
+       <!-- <a class="navbar-brand" href="#">
+         <img src="./Images/HomePage/LOGO.png" alt="TheWeddingStoryBook" width="80" height="80">
+       </a> -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+           <li class="nav-item ulmarleft">
+             <a class="nav-link active" aria-current="page" href="index.html">
+               <font class="NavName"
+                 style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                 Home
+               </font>
+               <img src="../Images/HomePage/HomeIcon.png" class="Icons" >
+             </a>
+           </li>
+           <li class="nav-item ulmarleft">
+             <a class="nav-link active" href="../pages/Decoration.html">
+               <font class="NavName"
+                 style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                 Decoration
+               </font>
+               <img src="../Images/HomePage/DecoIcon.png" class="Icons" >
+             </a>
+           </li>
+           <li class="nav-item ulmarleft">
+             <a class="nav-link active" href="../pages/Destination-Wedding.html">
+               <font class="NavName"
+                 style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                 Destination Wedding
+               </font>
+               <img src="../Images/HomePage/DestIcon.png" class="Icons" >
+             </a>
+           </li>
+           <!-- <li class="nav-item ulmarleft">
+             <a class="nav-link active" href="../pages/The-wedding-card.html">
+               <font class="NavName"
+                 style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                 E-Invites 💌
+               </font>
+             </a>
+           </li>
+           <li class="nav-item ulmarleft">
+             <a class="nav-link active" href="../pages/AboutUs.html">
+               <font class="NavName"
+                 style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                 About Us
+               </font>
+               <img src="../Images/HomePage/AbouIcon.png" class="Icons" >
+             </a>
+           </li> -->
+           <li class="nav-item ulmarleft">
+             <a class="nav-link active" href="../pages/Login.html">
+               <font class="NavName"
+                 style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                 Login
+               </font>
+               <img src="../Images/HomePage/logicon.png" class="Icons" >
+             </a>
+           </li>
+           <button class="NavName ulmarleft lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+            <img src="../Images/HomePage/sun.png" class="Icons2">
+          </button>
+          <button class="NavName ulmarleft2 lightbtn" onclick="Dark()">
+            <img src="../Images/HomePage/dark.png" class="Icons2" >
+          </button>
+           </ul> 
+       </div>
+     </div>
+   </nav>
+ 
+ <br><br><br>
+<h1 class="top-heading">Banquet Halls & Lawns</h1>
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="../Images/hall/slide2.jpg" class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+       <img src="../Images/hall/slide1.jpg" class="d-block w-100" alt="...">
+     </div>
+     <div class="carousel-item">
+       <img src="../Images/hall/slide3.webp" class="d-block w-100" alt="...">
+     </div>
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+   </button>
+ </div>
+
+ 
+ <br><br> 
+  <!-- availability -->
+<!-- <h1 class="top-heading">Cheak Hall availability</h1> -->
+  <!-- <section class="availability">
+
+   <form action="">
+
+      <div class="box">
+         <p>hall book date <span>*</span></p>
+         <input type="date" class="input">
+      </div>
+
+      <div class="box">
+         <p>hall out date <span>*</span></p>
+         <input type="date" class="input">
+      </div>
+
+      <div class="box">
+         <p>male <span>*</span></p>
+         <select name="male" id="" class="input">
+            <option value="1">100 male</option>
+            <option value="2">200 male</option>
+            <option value="3">300 male</option>
+            <option value="4">400 male</option>
+            <option value="5">500 male</option>
+            <option value="6">600 male</option>
+         </select>
+      </div>
+
+      <div class="box">
+         <p>female <span>*</span></p>
+         <select name="female" id="" class="input">
+            <option value="1">100 female</option>
+            <option value="2">200 female</option>
+            <option value="3">300female</option>
+            <option value="4">400 female</option>
+            <option value="5">500 female</option>
+            <option value="6">600 female</option>
+         </select>
+      </div>
+
+      <div class="box">
+         <p>ocasion <span>*</span></p>
+         <select name="ocasion" id="" class="input">
+            <option value="1">wedding</option>
+            <option value="2">haldi</option>
+            <option value="3">sangit</option>
+            <option value="4">mehndi</option>
+            <option value="5">reception</option>
+            <option value="6">for all</option>
+         </select>
+      </div>
+
+      <input type="submit" value="check availability" class="btn">
+
+   </form>
+
+</section> -->
+
+<!-- end -->
+
+<!-- end -->
+<!-- about -->
+
+<section class="about" id="about">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="../Images/Destination-Wedding-img/jaipur/J-img-6.webp" alt="" class="aboutimg">
+      </div>
+
+      <div class="content">
+         <h3  style=" color: #F653A8;">About Our halls</h3>
+         <p> It is readily available even by public transport, making it a convenient place to arrive for guests. 
+            They provide you with their banquet hall and luxuriant green, well-maintained event space for having your ceremonies.
+             Saawariya Seth Tent and Decorators is a spacious event space with covered and 
+            uncovered indoor and outdoor areas ideal for hosting your sangeet, mehndi, reception and so on with much grandeur. They have four event spaces at the banquet hall.</p>
+         <p>provide you with their in-house catering services. Their chefs offer yummy food from various delicious platters from their multi-cuisine menu.
+             They also provide you with the assistance of their expert in-house decor to help you with decking the banquet hall up so that it is in sync with the ambience of your 
+             ceremonies, making your dream wedding come true. 
+            Their friendly approach and professional services will make sure your wedding is a booming success.</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- end -->
+<section class="room" id="room">
+
+   <h1 class="heading">Our Halls & Lawns</h1>
+
+<div class="swiper-slide slide">
+   <div class="image">
+      <span class="price">Price Per Plate ₹1,900</span>
+      <img src="../Images/hall/hall 1.webp" alt="">
+      <a href="#" class="fas fa-shopping-cart"></a>
+   </div>
+   <div class="content">
+      <h3>MCA Sachin Tendulkar Gymkhana</h3>
+      <p>25 to 1200 guests, Kandiwali west TAMIL NADU</p>
+      <p>tel:07948061892</p>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <a href="#" class="btn">book now</a>
+   </div>
+</div>
+<div class="swiper-slide slide">
+   <div class="image">
+      <span class="price">Price Per Plate ₹1,500</span>
+      <img src="../Images/hall/hall2.webp" alt="">
+      <a href="#" class="fas fa-shopping-cart"></a>
+   </div>
+   <div class="content">
+      <h3>The Sahil Hotel TAMIL NADU</h3>
+      <p>50 to 600 guests, TAMIL NADU Central TAMIL NADU.</p>
+      <p>88703268879</p>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <a href="#" class="btn">book now</a>
+   </div>
+</div>
+<div class="swiper-slide slide">
+   <div class="image">
+      <span class="price">Price Per Plate ₹499</span>
+      <img src="../Images/hall/hall 3.webp" alt="">
+      <a href="#" class="fas fa-shopping-cart"></a>
+   </div>
+   <div class="content">
+      <h3>Enchanted Celebration</h3>
+      <p>550 to 5000 guests, Andheri east TAMIL NADU.</p>
+      <p>tel:08047108357.</p>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+      </div>
+      <a href="#" class="btn">book now</a>
+   </div>
+</div>
+<div class="swiper-slide slide">
+   <div class="image">
+      <span class="price">Price Per Plate ₹699</span>
+      <img src="../Images/hall/haa4.webp" alt="">
+      <a href="#" class="fas fa-shopping-cart"></a>
+   </div>
+   <div class="content">
+      <h3>Dayanand Lawn and Banquet</h3>
+      <p>250 to 900 guests, Mulund west TAMIL NADU.</p>
+      <p>tel:08047097634 Extn: 3399.</p>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+        
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <a href="#" class="btn">book now</a>
+   </div>
+</div>
+<div class="swiper-slide slide">
+   <div class="image">
+      <span class="price">Price Per Plate ₹275</span>
+      <img src="../Images/hall/hall5.webp" alt="">
+      <a href="#" class="fas fa-shopping-cart"></a>
+   </div>
+   <div class="content">
+      <h3>ICC Hall, Dombivli</h3>
+      <p>500 to 1000 guests, Dombivli TAMIL NADU.</p>
+      <p>10% discount for rtc family</p>
+      <p>tel:08047187739.</p>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <a href="#" class="btn">book now</a>
+   </div>
+</div>
+<div class="swiper-slide slide">
+   <div class="image">
+      <span class="price">Price Per Plate ₹1,200</span>
+      <img src="../Images/hall/hall6.webp" alt="">
+      <a href="#" class="fas fa-shopping-cart"></a>
+   </div>
+   <div class="content">
+      <h3>Sarita Lawns</h3>
+      <p>100 to 1000 guests, Andheri West TAMIL NADU.</p>
+      <p>tel:08047612739.</p>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <a href="#" class="btn">book now</a>
+   </div>
+</div>
+<div class="swiper-slide slide">
+   <div class="image">
+      <span class="price">1400 rs per Plate</span>
+      <img src="../Images/hall/hall7.webp" alt="" class="img">
+      <a href="#" class="fas fa-shopping-cart"></a>
+   </div>
+   <div class="content">
+      <h3> Brijwasi wedding hall</h3>
+      <p>50 to 100 guests, Goregao TAMIL NADU. 15% discount</p>
+      <p>tel:08047120739.</p>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <a href="#" class="btn">book now</a>
+      <a href="https://www.weddingwire.in/banquet-halls/mumbai" class="btn">View more</a>
+   </div>
+</div>
+ 
+ <!-- availability -->
+ <h1 class="top-heading">Book Hall</h1>
+ <section class="availability">
+
+   <!-- <form action="">
+      <div class="box">
+         <p>name <span>*</span></p>
+         <input type="text" class="input" placeholder="Your Name" id="Name">
+      </div>
+
+      <div class="box">
+         <p>email <span>*</span></p>
+         <input type="text" class="input" placeholder="Your Email" id="email">
+      </div>
+
+      
+      <div class="box">
+         <p>ocasion <span>*</span></p>
+       <input style="width: 80%; height: 80px; margin-top: 10px; border-radius: 10px;" type="text" id="ocasion" placeholder="ocasion">
+      </div>
+      <div class="box">
+        <p> No of Days <span>*</span></p>
+        <input style="width: 80%; height: 80px; border-radius: 10px;" type="number" placeholder="No of Days" id="days">
+     </div>
+      <div class="box">
+         <p>No.of members <span>*</span></p>
+         <input style="width: 80%; height: 80px; border-radius: 10px;" type="number" placeholder="Number of members " id="members">
+      </div>
+
+      <input type="submit" value="Book Now" class="btn" onclick="handlesubmit()">
+
+   </form> -->
+
+   
+<form id="myForm">
+  <input type="text" id="Name" placeholder="Name">
+  <input type="email" id="email" placeholder="Email">
+  <input type="text" id="ocasion" placeholder="Occasion">
+  <input type="number" id="members" placeholder="Members">
+  <input type="number" id="days" placeholder="Days">
+  <button type="button" id="button">Submit</button>
+</form>
+
+</section>
+
+
+<!-- end -->
+<h1 class="container-title-2">Coustomer Reviews</h1>
+
+<div>
+    <div class="horizontal-card-2 card mb-3">
+        <div class="row g-0 ">
+            <div class="col-4">
+                <img onmouseover="setNewImage()" onmouseout="setOldImage()"  id="img" src="../Images/hall/review1 (1).jpg" 
+                    class="img-fluid rounded-start img-2" alt="...">
+            </div>
+            <div class="col-8">
+                <div class="card-body">
+                    <h5 class="card-title-2 " style="color: #F653A8;">Anjali</h5>
+                    <h5 class="card-title-2" style="color: #4E6E81;">Arnav </h5>
+                    <br>
+
+                    <p class="horizontal-card-text-2">"I recently had my wedding reception at the weeding book and I couldn't have been happier with my experience.
+                      The staff was extremely helpful and accommodating throughout the planning process and on the day of the event. The venue itself is stunning,
+                       with a beautiful outdoor lawn area for the ceremony and a spacious indoor hall for the reception. The food and drinks were delicious and well-prepared,
+                        and the overall atmosphere was perfect for our special day. I would highly recommend  
+                     to anyone looking for a beautiful and stress-free wedding venue."
+                    </p>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="col-lg-11">
+
+      <footer class=" text-center text-lg-start text-white">
+        <div class="container p-4">
+          <div class="row my-4">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    
+              <!-- <div class="rounded-circle  shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                <img src="../Images/HomePage/LOGO WBG.png" height="180" alt=""
+                     loading="lazy" />
+                
+              </div> -->
+              <h2 class="LogoName ms-5">The Wedding <br> Plannerk</h2>
+    
+              <p class="text-center2">"From Dreams To Reality: Let Us Plan Your Wedding"</p>
+    
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Our Services</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="../pages/Decoration.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Decoration
+                  <img src="../Images/HomePage/DecoIcon.png" class="Icons" >
+                </a>
+                </li>
+                <li class="mb-2">
+                  <a href="../pages/Destination-Wedding.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Destination Wedding
+                    <img src="../Images/HomePage/DestIcon.png" class="Icons" >
+                  </a>
+                </li>
+                <!-- <li class="mb-2">
+                  <a href="../pages/Photo-gallery.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Photo Gallery
+                    <img src="../Images/HomePage/PhotIcon.png" class="Icons" >
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="../pages/MakeUp.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Makeup
+                    <img src="../Images/HomePage/MakeIcon.png" class="Icons" >
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="../pages/Jewellery.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Jewellary
+                    <img src="../Images/HomePage/jwelIcon.png" class="Icons" >
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="../pages/Bride-Groom-Cloth.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Bride Clothes
+                    <IMG src="../Images/HomePage/BRIDiCON.png" class="Icons" >
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+      
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Our Services</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="../pages/Vendor.html" class="text-white" style="text-decoration: none"><i class="fas fa-paw pe-3"></i>Vendors
+                    <img src="../Images/HomePage/VendIcon.png" class="Icons" >
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="../pages/Halls.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Halls & Lawns
+                    <img src="../Images/HomePage/hallIcon.png" class="Icons" >
+                  </a>
+                </li>
+                <!-- <li class="mb-2">
+                  <a href="../pages/The-wedding-card.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>E-Invites</a>
+                  <img src="../Images/HomePage/InviIcon.png" class="Icons" >
+                </li>
+                <li class="mb-2">
+                  <a href="../pages/AboutUs.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>About Us
+                    <img src="../Images/HomePage/AbouIcon.png" class="Icons" >
+                  </a>
+                </li> -->
+                <!-- <li class="mb-2">
+                  <a href="#Home" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Home
+                    <img src="../Images/HomePage/HomeIcon.png" class="Icons" >
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Contact</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p><i class="fas fa-map-marker-alt pe-2"></i>thottilpatti pannadi katuvu,Mettur</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-phone pe-2"></i>88703268879</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope pe-2 mb-0"></i>info@weddingstorybook.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: black">
+          © 2023 Copyright:
+          <a class="text-white" href="http://theweddingstorybook.netlify.app">Karthikeyan</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+    <!-- End of .container -->
+      
+      
+    
+    
+    
+    
+    
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<script type="module" src="../JS/hall.js">
+ 
+  </script>
+
+
+ <!-- <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+import { getFirestore, collection, setDoc } from "firebase/firestore";
+const firebaseConfig = {
+  apiKey: "AIzaSyDL1hdN-lhzZnGR5O6p-0G06bCaZWp6gGo",
+  authDomain: "wedding-planer-51267.firebaseapp.com",
+  projectId: "wedding-planer-51267",
+  storageBucket: "wedding-planer-51267.appspot.com",
+  messagingSenderId: "861818527130",
+  appId: "1:861818527130:web:00a1bc36e2d63e44beee23",
+  measurementId: "G-BKGQPJNS2B"
+};
+const db = getFirestore(app);
+
+setDoc(dbRef, data)
+.then(docRef => {
+    console.log("Document has been added successfully");
+})
+.catch(error => {
+    console.log(error);
+})
+ </script> -->
+</body>
+</html

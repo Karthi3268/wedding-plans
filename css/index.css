@@ -1,0 +1,363 @@
+*{
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+body{
+    background-color: #ffebe8;
+}
+
+.Dark{
+    color: white;
+    background-color: #212121;
+}
+
+.NavName{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F65A83;
+}
+
+.ulmarleft{
+    margin-left: 60px;
+}
+
+.ulmarleft2{
+    margin-left: 10px;
+}
+
+.nav-item:hover{
+    background-color: #F65A83;
+    transform: scale(1.1);
+}
+
+.Icons{
+    height: 20px;
+    margin-left: 10px;
+}
+
+.Icons2{
+    height: 40px;
+}
+
+.lightbtn{
+    background-color: #F65A83;
+    color: #ffebe8;
+}
+
+.lightbtn:hover{
+    background-color: #08192b;
+    color: #ffebe8;
+}
+  
+
+.BGimg{
+    background-image: url(../Images/HomePage/hand.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HandBox{
+    height: 310px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.HandName{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffebe8;
+    align-items: center;
+    justify-content: center;
+}
+
+.HandSlogan{
+    font-size: 30px;
+    font-family:'Times New Roman';
+    color: #ffebe8;
+    margin-left: 60px;
+    margin-top: 100px;
+    padding: 15px;
+}
+
+/* .Bridaloutfit{
+    margin-top: 50px;
+    height: 350px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin: auto;
+} */
+
+.VidClass{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    margin-bottom: 100px;
+    border: 10px solid #F65A83;
+    box-shadow: 5px 5px 5px 5px black ;
+    border-radius: 15px;
+}
+
+.Slidesize{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.SlideRad{
+    border-radius: 15px;
+}
+
+.HandBox2{
+    height: 100px;
+    width: 600px;
+    margin-top: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+.Row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Destwed{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px black;
+    border: 10px solid #F65A83;
+}
+
+.Destwed2{
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px black;
+    border: 10px solid #F65A83;
+}
+
+.OurServ{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body{
+    background-color: #F65A83;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid  black;
+    
+}
+
+.card-body:hover{
+    background-color: #ffebe8;
+    color: black;
+}
+
+.ChecKwork{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+
+.DecoRow:hover{
+    transform: scale(1.1);
+    transition:1s ease;
+}
+
+
+
+.VendorbBTNRow{
+    display: flex;
+    margin-top: 30px;
+}
+
+.VendorbBTN{
+    height: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: max-content;
+    background-color: #ffebe8;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.VendorbBTN:hover{
+    height: 60px;
+    padding: 5px;
+    width: max-content;
+    background-color: #F65A83;
+    border: 2px solid black;
+    transform: scale(1.1);
+    margin-bottom: 50px;
+}
+
+.row2{
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px #F65A83;
+}
+
+.PartHead{
+    font-size: 50px;
+    font-family: 600;
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.PartIMG{
+    height: 100px;
+}
+
+.ContRow{
+    height: 500px;
+    background-color: #e8e8e8;
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px #F65A83;;
+}
+
+.ContactUS{
+    color: black;
+    text-align: justify;
+}
+
+.ContactUSInfo{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: serif;
+    
+}
+
+.ContIcon{
+    color: #F65A83;
+    height: 30px;
+}
+
+.InfoIcon{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ContBord{
+    border-radius: 50px;
+    background-color: #feaea3;
+    border: 2px solid black;
+}
+
+.ContForm{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Contlabel{
+    color: black;
+    margin-top: 10px;
+}
+
+.ContInput{
+    height: 45px;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+}
+
+.ContInput2{
+    height: 100px;
+    border-radius: 25px;
+    background-color: #e8e8e8;
+    text-align: left;
+    align-items: start;
+}
+
+.SubmitDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubmitBTN{
+    background-color: #ffebe8;
+    padding: 5px;
+    font-size: large;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.SubmitBTN:hover{
+    background-color: #F65A83;
+}
+
+.LogoName{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-center2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container{
+    background-color: #08192b;
+}
+
+.text-white{
+    color: black;
+    font-weight: 600;
+}
+
+.class{
+    width: 100%;
+}

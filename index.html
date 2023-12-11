@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Wedding Planer </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+</head>
+
+<body class="body" id="DarkMode">
+  <nav class="navbar navbar-expand-lg fixed-top" >
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                Home
+              </font>
+              <img src="./Images/HomePage/HomeIcon.png" class="Icons">
+            </a>
+          </li>
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/Decoration.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                Decoration
+              </font>
+              <img src="./Images/HomePage/DecoIcon.png" class="Icons">
+            </a>
+          </li>
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/Destination-Wedding.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                Destination Wedding
+              </font>
+              <img src="./Images/HomePage/DestIcon.png" class="Icons">
+            </a>
+          </li>
+          <!-- <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/The-wedding-card.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                E-Invites 💌
+              </font>
+            </a>
+          </li> -->
+          <!-- <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="./pages/AboutUs.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                About Us
+              </font>
+              <img src="./Images/HomePage/AbouIcon.png" class="Icons">
+            </a> -->
+          </li>
+          <li class="nav-item ulmarleft">
+            <a class="nav-link active" href="Loginpage.html">
+              <font class="NavName"
+                style="font-weight: bolder; font-family: Playfair Display,Helvetica Neue,Helvetica,Arial,sans-serif!important;">
+                Login
+              </font>
+              <img src="./Images/HomePage/logicon.png" class="Icons">
+            </a>
+          </li>
+
+          
+          <button class="NavName ulmarleft lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+            <img src="./Images/HomePage/sun.png" class="Icons2">
+          </button>
+          <button class="NavName ulmarleft2 lightbtn" onclick="Dark()">
+            <img src="./Images/HomePage/dark.png" class="Icons2">
+          </button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="BGimg img-fluid" id="Home">
+    <div class="HandBox col-lg-6 mt-5 col-md-6 mt-5 col-sm-6 mt-5 col-xs-6 mt-5">
+      <font class="HandName lg display-2 ms-3 mt-2">
+        The Wedding Planer
+      </font>
+      <font class="HandSlogan">
+        "From Dreams To Reality: Let Us Plan Your Wedding"
+      </font>
+    </div>
+  </section>
+
+
+  <!-- <div>
+    <a href="./pages/Bride-Groom-Cloth.html">
+      <img src="./Images/HomePage/Bridaloutfit.webp" alt="Bride-Groom-Cloth"
+        class="Bridaloutfit col-lg-11 ms-12 me-5 mt-5 col-sm-11 ms-5 me-5 mt-5 col-md-11 ms-5 me-5 mt-5 col-xs-11 ms-5 me-5 mt-5"
+        style="border-radius: 35px;">
+    </a>
+  </div> -->
+
+
+
+  <div class="VidClass">
+    <video autoplay loop muted plays-inline class="video col-lg-8 col-sm-8 col-md-8 col-xs-8 mt-5 mb-5 ms-5">
+      <source src="./Images/HomePage/wed video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="Slidesize">
+    <div id="carouselExampleCaptions"
+      class="carousel slide col-lg-8 mt-5 ms-5 col-md-8 mt-5 ms-5 col-sm-8 mt-5 ms-5 col-xs-8 mt-5 ms-5 ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./pages/Mehendi.html">
+            <img src="./Images/HomePage/Slider.jpg" class="d-block w-100 SlideRad" alt="Photo Gallary">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Mehendi Designs</h5>
+              <p>Elevate your beauty with intricate artistry and timeless elegance of Bridal Mehendi.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./pages/Photo-gallery.html">
+            <img src="./Images/HomePage/Photo Gallary.jpg" class="d-block w-100 SlideRad" alt="Photo Gallary">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Photo Gallary</h5>
+              <p>A Day Without Photography Is Like A Day Without Sunshine.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./pages/MakeUp.html">
+            <img src="./Images/HomePage/MakeUp.jpg" class="d-block w-100 SlideRad" alt="MakeUp">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Bridal Makeup</h5>
+              <p>On your wedding day, you should look like yourself at your most beautiful</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./pages/Jewellery.html">
+            <img src="./Images/HomePage/Jewellary.jpg" class="d-block w-100 SlideRad" alt="Jewellary">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Bridal Jewellary</h5>
+              <p>Jewellary is a lot like love; it's a good idea but expensive.</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <a href="./pages/Halls.html">
+            <img src="./Images/HomePage/Lawns.jpg" class="d-block w-100 SlideRad" alt="Lawns">
+            <div class="carousel-caption d-none d-md-block HandBox2">
+              <h5>Wedding Halls</h5>
+              <p>A place where you meet your dream partner</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev active" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next active" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="Row m-5 p-1">
+    <div>
+      <img src="./Images/HomePage/Destwed.jpg" class="Destwed col-lg-8 me-5 col-sm-8 me-5 col-md-8 me-5 col-xs-8 me-2"
+        alt="Rajwada">
+      <img src="./Images/HomePage/DestWed2.jpg" class="Destwed2 col-lg-3 col-sm-3 col-md-3 col-xs-3 mt-3" alt="Rajwada">
+    </div>
+  </div>
+
+
+  <div class="OurServ">
+    <h3>Our Core Services</h3>
+  </div>
+
+  <div class="row">
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">
+          Wedding Planner</h2>
+        <p class="card-text">Our partial planning services is perfect for those couples who have already started their
+          wedding process and need guidance regarding some elements of their wedding like decor designing.</p>
+      </div>
+    </div>
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">
+          Vendor Sourcing</h2>x
+        <p class="card-text">Special prices and exclusive discounts with our partners (Decorators, Entertainment, Bridal
+          Makeup, Mehendi etc) and priority access to events sponsored by Wedding Story.</p>
+      </div>
+    </div>
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">
+          Wedding Packages</h2>
+        <p class="card-text">Wedding packages are pre-arranged combinations of the best wedding deals. Wedding Packages
+          are extremely popular when planning a destination wedding.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">
+          Complete Wedding Planning</h2>
+        <p class="card-text">Our Full Service Wedding Planning includes every aspect of planning your wedding. No detail
+          is left undone, as our team will be there for you in every step of the way</p>
+      </div>
+    </div>
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">
+          Wedding Venue Booking</h2>
+        <p class="card-text">Wedding Story plans over 40 weddings in year. This avail us to get discounted rates from
+          venues which are not available to you. Get benefits of our hotel tie-up. Post your requirements now.</p>
+      </div>
+    </div>
+
+    <div class="card col-lg-3 p-2 ms-3 mb-5 col-md-10 col-sm-10 col-xs-10">
+      <div class="card-body Wedplan">
+        <h2 class="card-title" style="text-align: center;">
+          Wedding Decor</h2>
+        <p class="card-text">From the moment your guests walk in, they should experience your vision and personality
+          through the stunning customized décor and unique touches that the our wedding decorators will provide.</p>
+      </div>
+    </div>
+
+    <div>
+      <h1 class="ChecKwork">
+        Check Some of Latest Wedding Work
+      </h1>
+    </div>
+
+    <div class="CardRow">
+      <img src="./Images/HomePage/MahaMandap.jpeg"
+        class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2 col-sm-3 m-2">
+      <img src="./Images/HomePage/palkhi.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+      <img src="./Images/HomePage/MahaDeco.jpeg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+    </div>
+
+    <div class="CardRow">
+      <img src="./Images/HomePage/MAndap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+      <img src="./Images/HomePage/Mandap2.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+      <img src="./Images/HomePage/mandap3.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+    </div>
+
+    <div class="CardRow">
+      <img src="./Images/HomePage/3mandap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+      <img src="./Images/HomePage/31mandap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+      <img src="./Images/HomePage/311mandap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+    </div>
+
+    <div class="CardRow">
+      <img src="./Images/HomePage/Mandap4.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+      <img src="./Images/HomePage/mandap5.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+      <img src="./Images/HomePage/312mandap.jpg" class="img-fluid DecoRow col-lg-3 m-2 col-md-3 m-2 col-sm-3 m-2">
+    </div>
+
+    <div class="VendorbBTNRow">
+      <button class="VendorbBTN">
+        <a href="./pages/Vendor.html" style="text-decoration: none; color: black; ">
+          Check Out Our Amazing Vendors
+        </a>
+      </button>
+    </div>
+<!-- 
+    <div class="row ContBord col-lg-11 m-5 p-5 ">
+      <div class="PartHead">
+        Our Partners
+      </div>
+      <div class="col-lg-11 col-sm-10 col-md-10 col-xs-10">
+        <img src="./Images/HomePage/Hotel1.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt=".">
+        <img src="./Images/HomePage/Hotel2.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt="...">
+        <img src="./Images/HomePage/Hotel10.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt="...">
+        <img src="./Images/HomePage/Hotel11.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt="...">
+        <img src="./Images/HomePage/hetel12.png" class="rounded  img-fluid PartIMG ms-2 mt-5" alt="...">
+
+      </div>
+      <div class="col-lg-11">
+        <img src="./Images/HomePage/Hotel6.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt=".">
+        <img src="./Images/HomePage/Hotel7.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+        <img src="./Images/HomePage/Hotel8.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+        <img src="./Images/HomePage/Hotel9.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+        <img src="./Images/HomePage/Hotel4.png" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+        <img src="./Images/HomePage/hotel13.jfif" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+        <img src="./Images/HomePage/hotel14.webp" class="rounded  img-fluid PartIMG ms-4 mt-5" alt="...">
+      </div>
+    </div> -->
+
+    <div class="row ContBord col-lg-10 my-5 mx-5">
+      <div class="ContactUS col-lg-5 m-3 p-3">
+        <h2 style="text-align: center;">
+          Contact Us
+        </h2>
+        <font class="ContactUSInfo">
+          At The Wedding Planner, we understand that every couple's love story is unique and special, which is why we
+          are committed to providing exceptional wedding photography services that capture the essence of your special
+          day. We want to ensure that you have all the information you need to make an informed decision about our
+          services, so we encourage you to contact us with any questions or inquiries you may have.
+          <br>
+          At The Wedding Planner, we pride ourselves on our exceptional customer service and attention to detail. We
+          believe that your wedding day is one of the most important days of your life, and we are committed to
+          capturing every moment in stunning detail. Contact us today to learn more about our services and how we can
+          help you create lasting memories of your special day.
+        </font>
+        <br><br>
+        <div class="InfoIcon">
+          <img src="./Images/HomePage/ContIcon.png" class="ContIcon">
+          <font style="margin-left: 30px;">
+            8870326879
+          </font>
+        </div>
+        <div class="InfoIcon">
+          <img src="./Images/HomePage/EmailIcon.png" class="ContIcon">
+          <font style="margin-left: 30px;">
+            info@weddingplanner.com       </font>
+
+        </div>
+      </div>
+      <div class="ContForm col-lg-3 col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+        <label class="Contlabel ms-5" for="inputname">Name:</label><br>
+        <input type="Name" id="inputname" Placeholder="Please Enter Your Name" required
+          class="ContInput col-lg-12  col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+        <br><br>
+        <label class="Contlabel ms-5" for="inputname">City:</label><br>
+        <input type="Name" id="inputname" Placeholder="Please Enter Your Name" required
+          class="ContInput col-lg-12  col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+        <br><br>
+        <label class="Contlabel ms-5" for="inputname">Wedding Type:</label><br>
+        <select class="ContInput col-lg-12  col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+          <option class="ContInput">
+            Choose Your Type
+          </option>
+          <option class="ContInput">
+            Local
+          </option>
+          <option class="ContInput">
+            Destination Wedding
+          </option>
+          <option class="ContInput">
+            Prime
+          </option>
+          <option class="ContInput">
+            Supreme
+          </option>
+        </select>
+        <br><br>
+        <label class="Contlabel ms-5" for="inputname">Message:</label><br>
+        <input type="Message" id="inputname" Placeholder="Type Of Wedding You want" required
+          class="ContInput2 col-lg-12  col-sm-8 col-md-8 col-xs-8 ms-5 me-5">
+        <br>
+        <div class="SubmitDiv mt-3 ms-3 mb-5">
+          <button class="SubmitBTN col-lg-6">
+            Cheers....!
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container col-lg-11 class">
+
+      <footer class=" text-center text-lg-start text-white">
+        <div class="container p-4">
+          <div class="row my-4">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+    
+              <!-- <div class="rounded-circle  shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                <img src="./Images/HomePage/LOGO WBG.png" height="180" alt=""
+                     loading="lazy" />
+                
+              </div> -->
+              <h2 class="LogoName ms-5">The Wedding <br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Planner</h2>
+    
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Our Services</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="./pages/Decoration.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Decoration
+                  <img src="./Images/HomePage/DecoIcon.png" class="Icons" >
+                </a>
+                </li>
+                <li class="mb-2">
+                  <a href="./pages/Destination-Wedding.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Destination Wedding
+                    <img src="./Images/HomePage/DestIcon.png" class="Icons" >
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="./pages/Booking-status.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Booking Status
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+      
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Our Services</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="./pages/Vendor.html" class="text-white" style="text-decoration: none"><i class="fas fa-paw pe-3"></i>Vendors
+                    <img src="./Images/HomePage/VendIcon.png" class="Icons" >
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="./pages/Halls.html" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Halls & Lawns
+                    <img src="./Images/HomePage/hallIcon.png" class="Icons" >
+                  </a>
+                </li>
+                
+                <li class="mb-2">
+                  <a href="#Home" class="text-white" style="text-decoration: none;"><i class="fas fa-paw pe-3"></i>Home
+                    <img src="./Images/HomePage/HomeIcon.png" class="Icons" >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Contact</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p><i class="fas fa-map-marker-alt pe-2"></i>thottilpatti pannadi katuvu,Mettur</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-phone pe-2"></i>88703268879</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope pe-2 mb-0"></i>info@weddingplanner.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <p class="text-center2 ms-5 mt-1">"From Dreams To Reality: Let Us Plan Your Wedding"</p>
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: black">
+          © 2023 Copyright:
+          <a class="text-white" href="http://theweddingstorybook.netlify.app">KARTHIKEYAN S</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+      </script>
+    <script>
+      function Light() {
+        const Element = document.getElementById("DarkMode");
+        Element.className = "body";
+      }
+
+      function Dark() {
+        const Element = document.getElementById("DarkMode");
+        Element.className = "Dark";
+      }
+    </script>
+</body>
+
+</html>

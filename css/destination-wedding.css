@@ -1,0 +1,219 @@
+body{
+    background-color: #ffebe8;
+}
+.Dark{
+    color: white;
+    background-color: #212121;
+}
+
+.NavName{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F65A83;
+}
+
+.ulmarleft{
+    margin-left: 60px;
+}
+
+.ulmarleft2{
+    margin-left: 10px;
+}
+
+.nav-item:hover{
+    background-color: #F65A83;
+    transform: scale(1.1);
+}
+
+.Icons{
+    height: 20px;
+    margin-left: 10px;
+}
+
+.Icons2{
+    height: 40px;
+}
+
+.lightbtn{
+    background-color: #F65A83;
+    color: #ffebe8;
+}
+
+.lightbtn:hover{
+    background-color: #08192b;
+    color: #ffebe8;
+}
+.Destination-btn{
+    color: black;
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 100px;
+    background-color: #FFE5F1;
+}
+.Destination-btn:hover{
+    background-color: #F65A83;
+    font-size: 13px;
+}
+.card-text{
+    text-align: center;
+    font-size:25px;
+    color: #F65A83;
+    font-weight: bold;
+}
+.card{
+    border-radius: 15px;
+    box-shadow: 0 0 7px 0px #B270A2;
+}
+
+.container-title{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 50px;
+    color: #F65A83;
+    text-align: center;
+    font-family:Brush script MT , Brush Script Std, cursive;
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.2s ease;
+}
+.inner:hover img{
+    transform: scale(1.3);       /* scale = increase the size of image */
+}
+.horizontal-card{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F65A83;
+    margin-top: 30px;   
+}
+
+.img{
+    height: 450px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+.horizontal-card-2{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #FFD1D1;
+    cursor: pointer;
+
+}
+.horizontal-card-text{
+    color: white;
+    font-size: 17px;
+    text-align: justify;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-text-end{
+    margin-left: 70px;
+    color: white;
+    font-size: 18px;
+}
+.card-text-end1{
+    margin-left: 70px;
+    margin-top: -15px;
+    color: white;
+    font-size: 18px;
+}
+
+
+.container-title-2{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 40px;
+    font-family:Brush script MT , Brush Script Std, cursive;
+}
+.card-title-2{
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+.card-text-end-2{
+    color: black;
+    font-size: 18px;
+  
+    
+}
+.card-text-end1-2{
+    margin-top: -15px;
+    color: black;
+    font-size: 18px;
+    
+}
+.img-2{
+    height: 450px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px gray;
+}
+.ScrollToTop{
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.scroll-top{
+    background-color: #ffebe8;
+    border: 1px solid black;
+    height: 40px;
+    width: 120px;
+    position: fixed; 
+    bottom: 10px;
+    border-radius: 20px;
+    z-index: 10;
+    margin-right: 3px;
+}
+
+.scroll-top:hover{
+    background-color: #e72e77;
+    color:white
+    
+}
+
+.last-btn{
+    padding-top: 5px;
+    color:black;
+}
+.text-center2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container-2{
+    background-color: #08192b;
+}
+
+.text-white{
+    color: black;
+    font-weight: 600;
+}
+
+.class{
+    width: 100%;
+}
+
+
+
+
